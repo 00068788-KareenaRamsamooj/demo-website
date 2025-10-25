@@ -18,3 +18,124 @@ header {
 main {
     padding: 2rem;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Background & Centering */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f9f9f9, #e6f0ff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Keep the page content compact */
+main {
+  width: 100%;
+  max-width: 640px;
+  padding: 20px;
+}
+
+/* Contact Form Container */
+.contact-form {
+  background-color: white;
+  padding: 28px 34px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Form Heading - style both h1 and h2 to be safe */
+.contact-form h1,
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 22px;
+}
+
+/* Small intro paragraph under heading */
+.intro {
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+/* Form Labels */
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #555;
+  font-weight: 600;
+}
+
+/* Inputs & Textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+/* Focus Effect */
+input:focus, textarea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.25);
+  outline: none;
+}
+
+/* Submit Button */
+input[type="submit"] {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #3c7cd6;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+  margin-top: 14px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 20px;
+  }
+  .contact-form h2 {
+    font-size: 20px;
+  }
+}
